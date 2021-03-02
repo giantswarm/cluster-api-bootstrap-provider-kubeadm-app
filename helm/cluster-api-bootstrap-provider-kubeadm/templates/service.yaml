@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2021-03-02T14:06:06Z"
+  labels:
+    cluster.x-k8s.io/provider: bootstrap-kubeadm
+    clusterctl.cluster.x-k8s.io: ""
+    control-plane: controller-manager
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:cluster.x-k8s.io/provider: {}
+          f:clusterctl.cluster.x-k8s.io: {}
+          f:control-plane: {}
+      f:spec:
+        f:ports:
+          .: {}
+          k:{"port":8443,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector:
+          .: {}
+          f:cluster.x-k8s.io/provider: {}
+          f:control-plane: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: clusterctl
+    operation: Update
+    time: "2021-03-02T14:06:06Z"
+  name: capi-kubeadm-bootstrap-controller-manager-metrics-service
+  namespace: capi-kubeadm-bootstrap-system
+  resourceVersion: "965"
+  uid: 16bdf8b8-9d3a-47cd-a62a-58ff9bf0a3c5
+spec:
+  clusterIP: 10.96.19.233
+  clusterIPs:
+  - 10.96.19.233
+  ports:
+  - name: https
+    port: 8443
+    protocol: TCP
+    targetPort: https
+  selector:
+    cluster.x-k8s.io/provider: bootstrap-kubeadm
+    control-plane: controller-manager
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
