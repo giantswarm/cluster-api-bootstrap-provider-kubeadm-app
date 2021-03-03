@@ -12,5 +12,5 @@ room for such suffix.
 {{- end -}}
 
 {{- define "resource.default.namespace" -}}
-capi-kubeadm-bootstrap-system
+giantswarm
 {{- end -}}
