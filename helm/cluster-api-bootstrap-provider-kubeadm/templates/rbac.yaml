@@ -3,7 +3,6 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   labels:
-    cluster.x-k8s.io/provider: bootstrap-kubeadm
     {{- include "labels.common" . | nindent 4 }}
   name: {{ include "resource.default.name" . }}-leader-election
   namespace: {{ include "resource.default.namespace" . }}
@@ -39,7 +38,6 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   labels:
-    cluster.x-k8s.io/provider: bootstrap-kubeadm
     {{- include "labels.common" . | nindent 4 }}
   name: {{ include "resource.default.name" . }}-manager
 rules:
@@ -95,7 +93,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   labels:
-    cluster.x-k8s.io/provider: bootstrap-kubeadm
+    {{- include "labels.common" . | nindent 4 }}
   name: {{ include "resource.default.name" . }}-proxy
 rules:
 - apiGroups:
@@ -115,7 +113,6 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   labels:
-    cluster.x-k8s.io/provider: bootstrap-kubeadm
     {{- include "labels.common" . | nindent 4 }}
   name: {{ include "resource.default.name" . }}-leader-election
   namespace: {{ include "resource.default.namespace" . }}
@@ -132,7 +129,6 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   labels:
-    cluster.x-k8s.io/provider: bootstrap-kubeadm
     {{- include "labels.common" . | nindent 4 }}
   name: {{ include "resource.default.name" . }}-manager
 roleRef:
@@ -148,7 +144,6 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   labels:
-    cluster.x-k8s.io/provider: bootstrap-kubeadm
     {{- include "labels.common" . | nindent 4 }}
   name: {{ include "resource.default.name" . }}-proxy
 roleRef:
