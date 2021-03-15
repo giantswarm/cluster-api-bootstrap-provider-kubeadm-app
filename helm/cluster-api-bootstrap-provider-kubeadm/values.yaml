@@ -4,7 +4,7 @@ project:
 
 image:
   registry: quay.io
-  name: k8s-staging-cluster-api/kubeadm-bootstrap-controller
+  name: giantswarm/kubeadm-bootstrap-controller
   tag: 1f96eea1165d6b356b3a1658eb4e3c7ddaec33b8
 
 featuregates:
