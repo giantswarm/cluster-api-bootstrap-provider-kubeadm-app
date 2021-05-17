@@ -5,6 +5,9 @@ metadata:
     clusterctl.cluster.x-k8s.io: ""
     control-plane: controller-manager
     {{- include "labels.common" . | nindent 4 }}
+    giantswarm.io/monitoring: "true"
+  annotations:
+    prometheus.io/scrape: "true"
   name: {{ include "resource.default.name" . }}
   namespace: {{ include "resource.default.namespace" . }}
 spec:
