@@ -13,4 +13,4 @@ data:
         apiVersion: v1
         resource: services
         subresource: proxy
-        name: {{ include "resource.default.name" . }}
+        name: kube-rbac-proxy
