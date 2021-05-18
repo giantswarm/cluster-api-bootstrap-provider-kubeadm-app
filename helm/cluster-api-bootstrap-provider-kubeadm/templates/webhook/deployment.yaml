@@ -29,6 +29,10 @@ spec:
         ports:
         - containerPort: 8443
           name: https
+        volumeMounts:
+          - mountPath: /etc/kube-rbac-proxy/config-file.yaml
+            name: kube-rbac-proxy-config
+            readOnly: true
       - args:
         - --metrics-addr=127.0.0.1:8080
         - --webhook-port=9443
@@ -55,3 +59,6 @@ spec:
         secret:
           defaultMode: 420
           secretName: {{ include "resource.default.name" . }}-cert
+      - name: kube-rbac-proxy-config
+        configMap:
+          name: {{ include "resource.default.name" . }}
