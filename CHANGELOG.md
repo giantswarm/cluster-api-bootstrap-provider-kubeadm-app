@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added config file for kube-rbac-proxy.
 
+### Fixed
+
+- Fixed label selector for webhook and manager services.
+
 ## [0.3.14-gs1] - 2021-05-12
 
 ## [0.0.1] - 2021-03-18
