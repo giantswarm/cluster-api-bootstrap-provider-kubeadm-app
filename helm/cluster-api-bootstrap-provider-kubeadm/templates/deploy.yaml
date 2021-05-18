@@ -44,7 +44,7 @@ spec:
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
         volumeMounts:
-          - mountPath: /etc/kube-rbac-proxy/config-file.yaml
+          - mountPath: /etc/kube-rbac-proxy
             name: kube-rbac-proxy-config
             readOnly: true
       - args:
