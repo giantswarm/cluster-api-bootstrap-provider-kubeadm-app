@@ -42,6 +42,10 @@ spec:
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
+        volumeMounts:
+          - mountPath: /etc/kube-rbac-proxy/config-file.yaml
+            name: kube-rbac-proxy-config
+            readOnly: true
       - args:
         - --metrics-addr=127.0.0.1:8080
         - --feature-gates=MachinePool={{ .Values.featuregates.machinepool }}
@@ -63,3 +67,7 @@ spec:
       tolerations:
       - effect: NoSchedule
         key: node-role.kubernetes.io/master
+      volumes:
+      - name: kube-rbac-proxy-config
+        configMap:
+          name: {{ include "resource.default.name" . }}
