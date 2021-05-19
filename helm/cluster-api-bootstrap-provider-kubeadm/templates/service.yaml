@@ -7,7 +7,7 @@ metadata:
     {{- include "labels.common" . | nindent 4 }}
   annotations:
     giantswarm.io/monitoring: "true"
-    giantswarm.io/monitoring-proxy-protocol: https
+    prometheus.io/scheme: "https"
   name: {{ include "resource.default.name" . }}
   namespace: {{ include "resource.default.namespace" . }}
 spec:
