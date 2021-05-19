@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added Prometheus scraping annotations.
 
+### Changed
+
+- Set service account for webhook container.
+
 ### Fixed
 
 - Fixed label selector for webhook and manager services.
