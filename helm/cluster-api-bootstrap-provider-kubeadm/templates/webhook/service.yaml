@@ -7,7 +7,6 @@ metadata:
   namespace: {{ include "resource.default.namespace" . }}
   annotations:
     giantswarm.io/monitoring: "true"
-    prometheus.io/scheme: "https"
 spec:
   ports:
   - port: 443
