@@ -7,9 +7,14 @@ registry:
 
 image:
   name: giantswarm/kubeadm-bootstrap-controller
-  tag: fa3378e532147820227c7b7a887d9e7ab54fc2ff
+  tag: v0.4.0
 
 featuregates:
   machinepool: true
 
 watchfilter: capi
+
+ports:
+  healthz: 9440
+  metrics: 8080
+  webhook: 9443

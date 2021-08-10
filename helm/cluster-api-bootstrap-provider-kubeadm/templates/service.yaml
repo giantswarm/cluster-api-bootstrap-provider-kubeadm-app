@@ -11,10 +11,12 @@ metadata:
   namespace: {{ include "resource.default.namespace" . }}
 spec:
   ports:
-  - name: http
-    port: 8080
-    protocol: TCP
-    targetPort: http
+  - name: metrics
+    port: {{ .Values.ports.metrics }}
+    targetPort: metrics
+  - name: webhook
+    port: {{ .Values.ports.webhook }}
+    targetPort: webhook
   selector:
     control-plane: controller-manager
     {{- include "labels.selector" . | nindent 4 }}
