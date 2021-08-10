@@ -4,3 +4,5 @@ description: Cluster API bootstrap provider Kubeadm (CABPK) is a component of Cl
 home: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app
 version: [[ .Version ]]
 appVersion: 0.4.0
+annotations:
+  config.giantswarm.io/version: "capi-v0.4.0-beta.1"
