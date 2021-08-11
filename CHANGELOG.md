@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Bumped `cluster-api` to version `v0.4.0`.
 - Removed dedicated container for the webhook.
+- Using a static name for the app manifests, so that they don't change when releasing a new version.
 
 ## [0.3.14-gs3] - 2021-06-01
  
