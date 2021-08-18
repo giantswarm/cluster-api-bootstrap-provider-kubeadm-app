@@ -5,14 +5,14 @@ metadata:
     cert-manager.io/inject-ca-from: {{ include "resource.default.namespace" . }}/{{ include "resource.default.name" . }}-cert
   labels:
     {{- include "labels.common" . | nindent 4 }}
-  name: {{ include "resource.default.name" . }}-webhook
+  name: {{ include "resource.default.name" . }}
 webhooks:
 - clientConfig:
     caBundle: Cg==
     service:
-      name: {{ include "resource.default.name" . }}-webhook
+      name: {{ include "resource.default.name" . }}
       namespace: {{ include "resource.default.namespace" . }}
-      path: /validate-bootstrap-cluster-x-k8s-io-v1alpha3-kubeadmconfig
+      path: /validate-bootstrap-cluster-x-k8s-io-v1alpha4-kubeadmconfig
       port: {{ .Values.ports.webhook }}
   failurePolicy: Fail
   matchPolicy: Equivalent
@@ -24,7 +24,7 @@ webhooks:
   - apiGroups:
     - bootstrap.cluster.x-k8s.io
     apiVersions:
-    - v1alpha3
+    - v1alpha4
     operations:
     - CREATE
     - UPDATE
