@@ -9,7 +9,7 @@ metadata:
     giantswarm.io/monitoring: "true"
     giantswarm.io/monitoring-port: "{{ .Values.ports.metrics }}"
 spec:
-  ports
+  ports:
   - name: webhook
     port: 443
     targetPort: webhook-server
