@@ -1,16 +1,17 @@
+{{ if eq (include "resource.app.unique" .) "false" }}
 apiVersion: admissionregistration.k8s.io/v1beta1
 kind: ValidatingWebhookConfiguration
 metadata:
   annotations:
-    cert-manager.io/inject-ca-from: {{ include "resource.default.namespace" . }}/{{ include "resource.default.name" . }}-cert
+    cert-manager.io/inject-ca-from: {{ include "resource.default.namespace" . }}/{{ include "resource.webhook.name" . }}
   labels:
     {{- include "labels.common" . | nindent 4 }}
-  name: {{ include "resource.default.name" . }}-webhook
+  name: {{ include "resource.webhook.name" . }}
 webhooks:
 - clientConfig:
     caBundle: Cg==
     service:
-      name: {{ include "resource.default.name" . }}-webhook
+      name: {{ include "resource.webhook.name" . }}
       namespace: {{ include "resource.default.namespace" . }}
       path: /validate-bootstrap-cluster-x-k8s-io-v1alpha3-kubeadmconfig
   failurePolicy: Fail
@@ -30,3 +31,4 @@ webhooks:
     resources:
     - kubeadmconfigs
   sideEffects: None
+{{ end }}
