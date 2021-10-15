@@ -43,10 +43,12 @@ spec:
           - containerPort: 8080
             name: http
             protocol: TCP
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
-      securityContext: {}
       serviceAccountName: {{ include "resource.default.name" . }}
       terminationGracePeriodSeconds: 10
       tolerations:
