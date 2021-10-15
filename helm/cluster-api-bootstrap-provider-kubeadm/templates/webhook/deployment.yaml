@@ -37,8 +37,7 @@ spec:
           name: cert
           readOnly: true
       securityContext:
-        runAsNonRoot: true
-        runAsUser: 1000
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
       serviceAccountName: {{ include "resource.webhook.name" . }}
       terminationGracePeriodSeconds: 10
       tolerations:
