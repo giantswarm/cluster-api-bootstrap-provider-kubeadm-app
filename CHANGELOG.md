@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.22-gs5] - 2021-10-22
+
 ### Changed
 
 - Align CRD webhook name with `cluster-api-app`.
@@ -62,7 +64,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.1] - 2021-03-18
 
-[Unreleased]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs4...HEAD
+[Unreleased]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs5...HEAD
+[0.3.22-gs5]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs4...v0.3.22-gs5
 [0.3.22-gs4]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs3...v0.3.22-gs4
 [0.3.22-gs3]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs2...v0.3.22-gs3
 [0.3.22-gs2]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs1...v0.3.22-gs2
