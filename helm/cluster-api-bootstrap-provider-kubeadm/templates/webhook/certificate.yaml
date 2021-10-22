@@ -3,7 +3,7 @@ kind: Certificate
 metadata:
   labels:
     {{- include "labels.common" . | nindent 4 }}
-  name: {{ include "resource.webhook.name" . }}
+  name: {{ include "resource.webhook.name" . }}-cert
   namespace: {{ include "resource.default.namespace" . }}
 spec:
   dnsNames:
