@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Change service port to 9443.
+
 ## [0.3.22-gs5] - 2021-10-22
 
 ### Changed
