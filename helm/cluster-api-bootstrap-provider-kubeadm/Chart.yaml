@@ -5,8 +5,5 @@ home: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app
 version: [[ .Version ]]
 appVersion: [[ .AppVersion ]]
 annotations:
-  application.giantswarm.io/owners: |
-    - catalog: default
-      provider: aws
-      team: firecracker
+  application.giantswarm.io/team: "phoenix"
   config.giantswarm.io/version: 1.x.x
