@@ -13,7 +13,7 @@ workflows:
           chart: "cluster-api-bootstrap-provider-kubeadm"
           filters:
             tags:
-              only: /^v.*-crd/
+              only: /^v.*/
       - architect/push-to-app-collection:
           name: push-aws-app-collection
           context: architect
@@ -26,4 +26,4 @@ workflows:
             branches:
               ignore: /.*/
             tags:
-              only: /^v.*/
+              only: /^v.*-crd/
