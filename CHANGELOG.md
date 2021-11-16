@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.22-gs7-crd] - 2021-11-16
+
 ## [0.3.22-gs7] - 2021-11-16
 
 ## [0.3.22-crd] - 2021-11-16
@@ -74,7 +76,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.1] - 2021-03-18
 
-[Unreleased]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs7...HEAD
+[Unreleased]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs7-crd...HEAD
+[0.3.22-gs7-crd]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs7...v0.3.22-gs7-crd
 [0.3.22-gs7]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-crd...v0.3.22-gs7
 [0.3.22-crd]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs6...v0.3.22-crd
 [0.3.22-gs6]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs5...v0.3.22-gs6
