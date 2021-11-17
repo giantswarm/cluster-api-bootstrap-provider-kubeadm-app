@@ -1,6 +1,7 @@
 {{/* vim: set filetype=mustache: */}}
 {{/*
 Create a name stem for resource names
+Name is shortened to cluster-api-bootstrap due to length restriction.
 
 When pods for deployments are created they have an additional 16 character
 suffix appended, e.g. "-957c9d6ff-pkzgw". Given that Kubernetes allows 63
