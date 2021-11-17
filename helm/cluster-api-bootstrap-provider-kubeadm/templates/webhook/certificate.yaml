@@ -1,4 +1,4 @@
-{{ if eq (include "resource.app.unique" .) "false" }}
+{{ if eq (include "resource.app.unique" .) "true" }}
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

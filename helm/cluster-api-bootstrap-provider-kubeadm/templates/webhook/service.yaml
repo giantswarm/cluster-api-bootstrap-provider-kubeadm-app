@@ -1,4 +1,4 @@
-{{ if eq (include "resource.app.unique" .) "false" }}
+{{ if eq (include "resource.app.unique" .) "true" }}
 apiVersion: v1
 kind: Service
 metadata:
