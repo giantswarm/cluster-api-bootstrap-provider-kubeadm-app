@@ -11,8 +11,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Don't render webhook templates when app is deployed via app collection.
 
-## [0.3.22-gs7-crd] - 2021-11-16
-
 ## [0.3.22-gs7] - 2021-11-16
 
 ## [0.3.22-crd] - 2021-11-16
