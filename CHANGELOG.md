@@ -79,7 +79,6 @@ Don't render webhook templates when app is deployed via app collection.
 ## [0.0.1] - 2021-03-18
 
 [Unreleased]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs7-crd...HEAD
-[0.3.22-gs7-crd]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs7...v0.3.22-gs7-crd
 [0.3.22-gs7]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-crd...v0.3.22-gs7
 [0.3.22-crd]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs6...v0.3.22-crd
 [0.3.22-gs6]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs5...v0.3.22-gs6
