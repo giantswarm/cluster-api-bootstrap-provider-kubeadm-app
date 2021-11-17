@@ -32,7 +32,7 @@ Selector labels
 {{- define "labels.selector" -}}
 {{ include "labels.provider" . }}
 app.kubernetes.io/name: {{ include "name" . | quote }}
-app.kubernetes.io/instance: {{ replace "provider-kubeadm-", "", .Release.Name | quote }}
+app.kubernetes.io/instance: {{ replace "provider-kubeadm-" "" .Release.Name | quote }}
 {{- end -}}
 
 {{/*
