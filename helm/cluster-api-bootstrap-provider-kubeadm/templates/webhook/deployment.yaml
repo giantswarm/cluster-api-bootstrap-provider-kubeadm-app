@@ -1,4 +1,3 @@
-{{ if eq (include "resource.app.unique" .) "true" }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -49,4 +48,3 @@ spec:
         secret:
           defaultMode: 420
           secretName: {{ include "resource.webhook.name" . }}
-{{ end }}
