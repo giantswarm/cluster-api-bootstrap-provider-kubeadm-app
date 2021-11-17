@@ -8,7 +8,7 @@ characters for resource names, the stem is truncated to 47 characters to leave
 room for such suffix.
 */}}
 {{- define "resource.default.name" -}}
-{{- .Release.Name | replace "." "-" | trunc 47 | trimSuffix "-" -}}
+{{- .Release.Name | replace "provider-kubeadm-" "" | replace "." "-" | trunc 47 | trimSuffix "-" -}}
 {{- end -}}
 
 {{- define "resource.default.namespace" -}}
