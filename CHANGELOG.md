@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-Shorten deployment names to `cluster-api-bootstrap` due to length limits.
+Shorten resource names to `cluster-api-bootstrap` due to k8s length limits.
 Ensure validation webhook deployment is created.
 
 ## [0.3.22-gs8] - 2021-11-17
