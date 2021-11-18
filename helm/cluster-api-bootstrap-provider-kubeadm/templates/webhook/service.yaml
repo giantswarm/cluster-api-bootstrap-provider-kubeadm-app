@@ -1,4 +1,3 @@
-{{ if eq (include "resource.app.unique" .) "true" }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -20,4 +19,3 @@ spec:
   selector:
     {{- include "labels.selector" . | nindent 4 }}
     control-plane: webhook
-{{ end }}
