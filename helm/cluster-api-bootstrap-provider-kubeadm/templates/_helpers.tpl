@@ -35,6 +35,12 @@ app.kubernetes.io/name: {{ include "name" . | quote }}
 app.kubernetes.io/instance: {{ .Release.Name | quote }}
 {{- end -}}
 
+{{- define "labels.webhook.selector" -}}
+{{ include "labels.provider" . }}
+app.kubernetes.io/name: {{ include "resource.webhook.name" . | quote }}
+app.kubernetes.io/instance: {{ .Release.Name | quote }}
+{{- end -}}
+
 {{/*
 Provider labels
 */}}

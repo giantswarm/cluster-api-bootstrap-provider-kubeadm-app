@@ -10,7 +10,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      {{- include "labels.selector" . | nindent 6 }}
+      {{- include "labels.webhook.selector" . | nindent 6 }}
       control-plane: webhook
   template:
     metadata:

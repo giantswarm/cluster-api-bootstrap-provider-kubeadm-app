@@ -17,5 +17,5 @@ spec:
     port: {{ .Values.ports.metrics }}
     targetPort: metrics
   selector:
-    {{- include "labels.selector" . | nindent 4 }}
+    {{- include "labels.webhook.selector" . | nindent 4 }}
     control-plane: webhook
