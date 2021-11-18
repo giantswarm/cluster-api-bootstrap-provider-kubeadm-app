@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    {{- include "labels.common" . | nindent 4 }}
+    {{- include "labels.webhook" . | nindent 4 }}
     control-plane: webhook
   name: {{ include "resource.webhook.name" . }}
   namespace: {{ include "resource.default.namespace" . }}
@@ -15,7 +15,7 @@ spec:
   template:
     metadata:
       labels:
-        {{- include "labels.common" . | nindent 8 }}
+        {{- include "labels.webhook" . | nindent 8 }}
         control-plane: webhook
     spec:
       containers:
