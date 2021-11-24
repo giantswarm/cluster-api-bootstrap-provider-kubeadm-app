@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.22-gs9-crd] - 2021-11-24
+
 ## [0.3.22-gs9] - 2021-11-24
 
 ### Fixed
@@ -87,7 +89,8 @@ Don't render webhook templates when app is deployed via app collection.
 
 ## [0.0.1] - 2021-03-18
 
-[Unreleased]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs9...HEAD
+[Unreleased]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs9-crd...HEAD
+[0.3.22-gs9-crd]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs9...v0.3.22-gs9-crd
 [0.3.22-gs9]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs8...v0.3.22-gs9
 [0.3.22-gs8]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs7...v0.3.22-gs8
 [0.3.22-gs7]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-crd...v0.3.22-gs7
