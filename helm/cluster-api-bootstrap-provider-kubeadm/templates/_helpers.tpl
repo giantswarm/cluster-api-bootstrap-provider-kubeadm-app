@@ -31,7 +31,7 @@ Selector labels
 */}}
 {{- define "labels.selector" -}}
 {{ include "labels.provider" . }}
-app.kubernetes.io/name: {{ include "name" . | quote }}
+app.kubernetes.io/name: {{ if eq $.Chart.Name $.Release.Name }}cluster-api-bootstrap{{ else }}{{ include "resource.default.name" . }}-webhook{{ end }}
 app.kubernetes.io/instance: {{ .Release.Name | quote }}
 {{- end -}}
 
