@@ -11,7 +11,7 @@ metadata:
 spec:
   ports:
   - name: webhook
-    port: 9443
+    port: {{ .Values.ports.webhook }}
     targetPort: webhook-server
   - name: metrics
     port: {{ .Values.ports.metrics }}
