@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Inject CA cert into dynamic webhook.
+
 ## [0.3.22-gs10-crd] - 2021-11-24
 
 ## [0.3.22-gs10] - 2021-11-24
