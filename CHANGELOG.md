@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.22-gs12] - 2021-11-25
+
 ### Fixed
 
 - Change webhook port to 9443.
@@ -103,7 +105,8 @@ Don't render webhook templates when app is deployed via app collection.
 
 ## [0.0.1] - 2021-03-18
 
-[Unreleased]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs11...HEAD
+[Unreleased]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs12...HEAD
+[0.3.22-gs12]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs11...v0.3.22-gs12
 [0.3.22-gs11]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs10...v0.3.22-gs11
 [0.3.22-gs10]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs9...v0.3.22-gs10
 [0.3.22-gs9]: https://github.com/giantswarm/cluster-api-bootstrap-provider-kubeadm-app/compare/v0.3.22-gs8...v0.3.22-gs9
